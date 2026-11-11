@@ -1,0 +1,30 @@
+6)
+check_file()
+{
+   if [ -d $1 ]; then
+      echo "exists" 
+   else
+      echo "not exists" 
+   fi
+}
+
+7)
+count_lines()
+{
+   wc -l < $1 
+}
+
+8)
+find_files() {
+  find "$1" -name "*.$2"
+}
+
+9)
+log() {
+  echo "$(date '+%Y-%m-%d %H:%M:%S') $*" >> app.log
+}
+
+10)
+count_level() {
+  grep -c "$2" "$1"
+}

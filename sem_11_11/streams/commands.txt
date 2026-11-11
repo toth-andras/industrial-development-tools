@@ -1,0 +1,20 @@
+1) echo "Hello Bash" > output.txt
+2) echo "Second line" >> output.txt
+3) wc -l < output.txt
+4) ls /tmp /nos_such_file 2> errors.log
+5)  
+6) 
+1>out.txt
+2>error.txt
+
+7)
+1>common_out.txt
+2>$1
+
+8)ls | tee files.txt
+
+9)date | tee -a events.log
+
+10) awk '{print $1}' access.log | sort | uniq -c | sort -rn | head -5 | tee top_ip.txt
+
+ 
